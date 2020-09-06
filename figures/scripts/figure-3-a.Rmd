@@ -1,0 +1,177 @@
+---
+title: "Figure 3 (a)"
+output: html_notebook
+---
+
+This script will generate Figure 3 (a) of our manuscript, alongside all statistical data we have reported in our text.
+
+Load the necessary R libraries.
+
+```{r}
+library(plyr)
+library(dplyr)
+library(stringr)
+library(dunn.test)
+```
+
+Load the CSV files into a dataframe.
+
+```{r}
+df_forwarding <- read.csv(file = "../../run/output/marenostrum-4/results/results.csv", sep = ";")
+df_gpfs <- read.csv(file = "../../run/output/marenostrum-4-gpfs/results/results.csv", sep = ";")
+
+df <- rbind(df_forwarding, df_gpfs)
+
+str(df)
+```
+
+Compute the Dunn test for all I/O forwarding choices in each scenario.
+
+```{r}
+df_full <- df
+
+df_full$layout_name <- revalue(as.factor(df_full$layout), c(
+    "0" = 'file-per-process',
+    "1" = 'shared-file'
+))
+
+df_full$spatiality_name <- revalue(as.factor(df_full$spatiality), c(
+    "0" = 'contiguous',
+    "1" = 'strided'
+))
+
+
+df_full$scenario <- paste(sep = '-', df_full$processes, df_full$clients, df_full$layout, df_full$spatiality, df_full$request, df_full$odirect)
+
+results <- data.frame(
+  'scenario' = factor(),
+  'comparison '= factor(),
+  'p.value' = double()
+)
+
+results_choices <- data.frame(
+  'scenario' = factor(),
+  'options' = list()
+)
+
+for (scenario in unique(df_full$scenario)) {
+   data <- df_full[df_full$scenario == scenario, ]
+
+   fwd_0 <- data[data$forwarders == 0, ]$bandwidth
+   fwd_1 <- data[data$forwarders == 1, ]$bandwidth
+   fwd_2 <- data[data$forwarders == 2, ]$bandwidth
+   fwd_4 <- data[data$forwarders == 4, ]$bandwidth
+   fwd_8 <- data[data$forwarders == 8, ]$bandwidth
+
+   dunn_result <- dunn.test(list(fwd_0, fwd_1, fwd_2, fwd_4, fwd_8))
+
+   tmp <- data.frame(
+     dunn_result$comparisons,
+     dunn_result$Z
+   )
+
+   names(tmp) <- c('comparison', 'p')
+
+   tmp$comparison <- revalue(
+     tmp$comparison,
+     c(
+       '1 - 2' = '0 vs. 1',
+       '1 - 3' = '0 vs. 2',
+       '1 - 4' = '0 vs. 4',
+       '1 - 5' = '0 vs. 8',
+       '2 - 3' = '1 vs. 2',
+       '2 - 4' = '1 vs. 4',
+       '2 - 5' = '1 vs. 8',
+       '3 - 4' = '2 vs. 4',
+       '3 - 5' = '2 vs. 8',
+       '4 - 5' = '4 vs. 8'
+     )
+   )
+   
+   # Dunn H0 is that the samples come from populations that follow the same distribution
+   # We reject H0 when p <= alpha, i.e., if p > alpha we could (forced definition) say that "they come from similar distributions" (NOTICE: this is not exactly the TRUTH)
+
+   results <<- rbind( # we need the two << to access the variable that is out of the scope
+     results, 
+     data.frame(
+       'scenario' = as.factor(scenario),
+       'comparison' = as.factor(tmp$comparison),
+       'p.value' = tmp$p
+     )
+   )
+
+   options <- c(0, 1, 2, 4, 8)
+
+   for (option in sort(tmp[tmp$p > 0.05, ]$comparison, decreasing = TRUE)) {
+     pair <- option %>% str_match_all("[0-9]+") %>% unlist %>% as.numeric
+     
+     options[options == pair[2]] <- pair[1]
+   }
+
+   results_choices <<- rbind(
+     results_choices,
+     data.frame(
+       'scenario' = as.factor(scenario),
+       'options' = paste(unlist(unique(options)), collapse = ', ')
+     )
+   )
+}
+```
+
+What the the choices we have for each scenario that changing the number of I/O nodes would yield different performance (bandwidth)?
+
+```{r}
+data.frame(count(results_choices, options))
+```
+
+Let's group this dataframe by the number of options, thus 0, 1, 2 and 0, 1, 4 both count as 3 options:
+
+```{r}
+results_choices$count <- sapply(str_split(results_choices$options, ','), length)
+
+str(results_choices)
+
+results_choices$count
+```
+
+Prepare the data for Figure 3 (a).
+
+```{r}
+df_plot_options <- data.frame(count(results_choices, count))
+
+df_plot_options$n <- as.numeric(as.character(df_plot_options$n))
+
+df_plot_options <- df_plot_options[order(df_plot_options$n), ]
+```
+
+Generate Figure 3 (a).
+
+```{r}
+library(ggplot2)
+
+plot <- ggplot(df_plot_options,
+    aes(
+        x = count,
+        y = n,
+        label = n
+    )) +
+    geom_bar(stat = "identity", fill = "#255D83") +
+    geom_text(nudge_y = 5, size = 3.5) +
+    expand_limits(y = 90) +
+    xlab("Number of choices") + 
+    ylab("Number of patterns") +
+    theme_bw() +
+    theme(
+        legend.position = "top",
+        plot.title = element_text(size = 10),
+        axis.title = element_text(size = 10), 
+        strip.background = element_rect(colour = NA, fill = NA)
+    )
+
+pdf(file="../output/figure-3-a.pdf", width = 2, height = 2)
+plot
+dev.off()
+
+```
+
+

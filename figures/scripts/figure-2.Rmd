@@ -1,0 +1,171 @@
+---
+title: "Figure 2"
+output: html_notebook
+---
+
+This script will generate Figure 2 of our manuscript, alongside all statistical data we have reported in our text.
+
+```{r}
+library(plyr)
+library(dplyr)
+
+df_forwarding <- read.csv(file = "../../run/output/marenostrum-4/results/results.csv", sep = ";")
+df_gpfs <- read.csv(file = "../../run/output/marenostrum-4-gpfs/results/results.csv", sep = ";")
+
+df <- rbind(df_forwarding, df_gpfs)
+
+str(df)
+```
+
+Group the multiple repetitions by scenario and summarize:
+
+```{r}
+df_forge_to <- ddply(df, .(forwarders, clients, processes, operation, layout, spatiality, odirect, request, total), summarize,
+    N = length(forwarders),
+
+    mean_time = mean(time),
+    sd_time = sd(time),
+    se_time = 2 * sd_time / sqrt(N),
+    median_time = median(time),
+
+    mean_bandwidth = mean(bandwidth),
+    sd_bandwidth = sd(bandwidth),
+    se_bandwidth = 2 * sd_bandwidth / sqrt(N),
+    median_bandwidth = median(bandwidth)
+)
+
+df_forge_to$layout_name <- revalue(as.factor(df_forge_to$layout), c(
+    "0" = 'file-per-process',
+    "1" = 'shared-file'
+))
+
+df_forge_to$spatiality_name <- revalue(as.factor(df_forge_to$spatiality), c(
+    "0" = 'contiguous',
+    "1" = 'strided'
+))
+
+str(df_forge_to)
+```
+
+Get the number of scenarios and their characteristics:
+
+```{r}
+df_selected <- df_forge_to
+
+df_selected$scenario <- paste(sep = '-', df_selected$processes, df_selected$clients, df_selected$layout, df_selected$spatiality, df_selected$request, df_selected$odirect)
+
+unique(df_selected$forwarders)
+unique(df_selected$clients)
+unique(df_selected$processes)
+unique(df_selected$layout)
+unique(df_selected$spatiality)
+unique(df_selected$request)
+unique(df_selected$odirect)
+
+length(unique(df_selected$scenario))
+```
+
+Prepare the dataset to plot Figure 2.
+
+```{r}
+
+df_full <- df
+
+df_full$layout_name <- revalue(as.factor(df_full$layout), c(
+    "0" = 'file-per-process',
+    "1" = 'shared-file'
+))
+
+df_full$spatiality_name <- revalue(as.factor(df_full$spatiality), c(
+    "0" = 'contiguous',
+    "1" = 'strided'
+))
+
+df_full$scenario <- paste(sep = '-', df_full$processes, df_full$clients, df_full$layout, df_full$spatiality, df_full$request, df_full$odirect)
+
+df_full <- subset(
+  df_full,
+    scenario == '1536-32-0-0-1024-1' |
+    scenario == '1536-32-0-0-128-1' |
+    scenario == '1536-32-1-0-1024-1' |
+    scenario == '1536-32-1-0-4096-1' |
+    scenario == '1536-32-1-1-512-1' |
+    scenario == '192-16-1-0-32-1' |
+    scenario == '192-16-1-1-128-1' |
+    scenario == '192-8-0-0-8192-1' |
+    scenario == '192-8-1-1-8192-1' |
+    scenario == '384-16-1-0-128-1' |
+    scenario == '384-16-1-0-8192-1' |
+    scenario == '384-32-1-1-4096-1' |
+    scenario == '384-32-1-1-512-1' |
+    scenario == '384-8-1-0-4096-1' |
+    scenario == '768-16-1-0-1024-1' |
+    scenario == '768-32-1-0-1024-1' |
+    scenario == '768-16-1-1-1024-1' |
+    scenario == '96-8-0-0-8192-1' |
+    scenario == '96-8-1-1-6144-1' |
+    scenario == '96-8-1-0-512-1'
+)
+
+df_full$scenario_name <- revalue(df_full$scenario, c(
+    '1536-32-0-0-1024-1' = 'Scenario A',
+    '1536-32-0-0-128-1' = 'Scenario B',
+    '1536-32-1-0-1024-1' = 'Scenario C',
+    '1536-32-1-0-4096-1' = 'Scenario D',
+    '1536-32-1-1-512-1' = 'Scenario E',
+    '192-16-1-0-32-1' = 'Scenario F',
+    '192-16-1-1-128-1' = 'Scenario G',
+    '192-8-0-0-8192-1' = 'Scenario H',
+    '192-8-1-1-8192-1' = 'Scenario I',
+    '384-16-1-0-128-1' = 'Scenario J',
+    '384-16-1-0-8192-1' = 'Scenario K',
+    '384-32-1-1-4096-1' = 'Scenario L',
+    '384-32-1-1-512-1' = 'Scenario M',
+    '384-8-1-0-4096-1' = 'Scenario N',
+    '768-16-1-0-1024-1' = 'Scenario O',
+    '768-32-1-0-1024-1' = 'Scenario P',
+    '768-16-1-1-1024-1' = 'Scenario Q',
+    '96-8-0-0-8192-1' = 'Scenario R',
+    '96-8-1-1-6144-1' = 'Scenario S',
+    '96-8-1-0-512-1' = 'Scenario T'
+))
+```
+
+Generate Figure 2.
+
+```{r}
+library(ggplot2)
+
+plot <- ggplot(df_full[df_full$operation == 'write', ],
+    aes(
+        x = as.factor(forwarders),
+        y = bandwidth
+    )) + 
+    geom_boxplot() +
+    scale_color_manual(
+        "",
+        values = c(   
+            "#796dd5",
+            "#6dd5c7",
+            "#afd56d",
+            "#ef4130",
+            "#222222"
+        )
+    ) +
+    facet_wrap(. ~ scenario_name, scales = "free", ncol = 4) +
+    expand_limits(y = 0) +
+    ylab("Bandwidth (MB/s)") + 
+    xlab("I/O Forwarding nodes") +
+    theme_bw() +
+    theme(
+        legend.position = "top",
+        plot.title = element_text(size = 10),
+        axis.title.y = element_text(vjust = 0.4), 
+        strip.background = element_rect(colour = NA, fill = NA)
+    )
+
+pdf(file="../output/figure-2.pdf", width = 5, height = 6.5)
+plot
+dev.off()
+```
+

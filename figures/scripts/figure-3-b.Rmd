@@ -1,0 +1,78 @@
+---
+title: "Figure 3 (b)"
+output: html_notebook
+---
+
+This script will generate Figure 3 (b) of our manuscript, alongside all statistical data we have reported in our text.
+
+Load the necessary R libraries.
+
+```{r}
+library(plyr)
+library(dplyr)
+library(stringr)
+```
+
+Load the CSV files into a dataframe.
+
+```{r}
+df_forwarding <- read.csv(file = "../../run/output/marenostrum-4/results/results.csv", sep = ";")
+df_gpfs <- read.csv(file = "../../run/output/marenostrum-4-gpfs/results/results.csv", sep = ";")
+
+df <- rbind(df_forwarding, df_gpfs)
+
+str(df)
+```
+
+Get the number of I/O nodes that achieved the highest bandwidth for each scenario.
+
+```{r}
+aux <- as.data.frame(
+  df_full %>%
+  group_by(scenario) %>%
+  slice(which.max(bandwidth))
+)
+
+aux <- subset(aux, select = c(scenario, forwarders, bandwidth))
+aux
+```
+
+Count the number of scenarios (access patterns) grouped by the best number of I/O forwarding nodes for each one.
+
+```{r}
+best_choices <- data.frame(count(aux, forwarders))
+best_choices
+```
+
+Generate Figure 3 (b).
+
+```{r}
+library(ggplot2)
+
+plot <- ggplot(best_choices,
+    aes(
+        x = as.factor(forwarders),
+        y = n,
+        label = n
+    )) +
+    #scale_y_continuous(breaks = seq(0, 65, 5)) +
+    geom_bar(stat = "identity", fill = "#255D83") +
+    geom_text(nudge_y = 5, size = 3.5) +
+    expand_limits(y = 90) +
+    xlab("Number of I/O nodes") + 
+    ylab("Number of patterns") +
+    theme_bw() +
+    theme(
+        legend.position = "top",
+        plot.title = element_text(size = 10),
+        axis.title = element_text(size = 10), 
+        strip.background = element_rect(colour = NA, fill = NA)
+    )
+
+pdf(file="../output/figure-3-b.pdf", width = 2, height = 2)
+plot
+dev.off()
+
+```
+
+
