@@ -1,0 +1,21 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+21:09:33 INFO  /home/bsc03/bsc03353/forge/src/main.c:107 140462969587776: I/O Forwarding Exploration [START]
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 700016.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

@@ -1,0 +1,138 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2 (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+srun: defined options for program `srun'
+srun: --------------- ---------------------
+srun: user           : `bsc03353'
+srun: uid            : 2751
+srun: gid            : 16290
+srun: cwd            : /gpfs/home/bsc03/bsc03353/forge-gpfs/experiments
+srun: ntasks         : 384 (set)
+srun: nodes          : 16 (set)
+srun: jobid          : 8455356 (default)
+srun: partition      : default
+srun: profile        : `NotSet'
+srun: job name       : `FORGE'
+srun: reservation    : `(null)'
+srun: burst_buffer   : `(null)'
+srun: wckey          : `(null)'
+srun: cpu_freq_min   : 4294967294
+srun: cpu_freq_max   : 4294967294
+srun: cpu_freq_gov   : 4294967294
+srun: switches       : -1
+srun: wait-for-switches : -1
+srun: distribution   : cyclic
+srun: cpu-bind       : default (0)
+srun: mem-bind       : default (0)
+srun: verbose        : 1
+srun: slurmd_debug   : 0
+srun: immediate      : false
+srun: label output   : false
+srun: unbuffered IO  : false
+srun: overcommit     : false
+srun: threads        : 60
+srun: checkpoint_dir : /var/slurm/checkpoint
+srun: wait           : 0
+srun: nice           : -2
+srun: account        : (null)
+srun: comment        : (null)
+srun: dependency     : (null)
+srun: exclusive      : false
+srun: bcast          : false
+srun: qos            : (null)
+srun: constraints    : mem-per-cpu=1880M 
+srun: geometry       : (null)
+srun: reboot         : yes
+srun: rotate         : no
+srun: preserve_env   : false
+srun: network        : (null)
+srun: propagate      : NONE
+srun: prolog         : (null)
+srun: epilog         : (null)
+srun: mail_type      : NONE
+srun: mail_user      : (null)
+srun: task_prolog    : (null)
+srun: task_epilog    : (null)
+srun: multi_prog     : no
+srun: sockets-per-node  : -2
+srun: cores-per-socket  : -2
+srun: threads-per-core  : -2
+srun: ntasks-per-node   : -2
+srun: ntasks-per-socket : -2
+srun: ntasks-per-core   : -2
+srun: plane_size        : 4294967294
+srun: core-spec         : NA
+srun: power             : 
+srun: remote command    : `/bin/bash -c /home/bsc03/bsc03353/forge-gpfs/build/forge /home/bsc03/bsc03353/forge/experiments/forge.mn4.004-2445.json /home/bsc03/bsc03353/FORGE-experiments-gpfs/FORGE-2445-8455356'
+srun: jobid 8455356: nodes(16):`s19r1b[01-07,09-12,14-18]', cpu counts: 48(x16)
+srun: launching 8455356.1 on host s19r1b01, 24 tasks: [0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368]
+srun: launching 8455356.1 on host s19r1b02, 24 tasks: [1,17,33,49,65,81,97,113,129,145,161,177,193,209,225,241,257,273,289,305,321,337,353,369]
+srun: launching 8455356.1 on host s19r1b03, 24 tasks: [2,18,34,50,66,82,98,114,130,146,162,178,194,210,226,242,258,274,290,306,322,338,354,370]
+srun: launching 8455356.1 on host s19r1b04, 24 tasks: [3,19,35,51,67,83,99,115,131,147,163,179,195,211,227,243,259,275,291,307,323,339,355,371]
+srun: launching 8455356.1 on host s19r1b05, 24 tasks: [4,20,36,52,68,84,100,116,132,148,164,180,196,212,228,244,260,276,292,308,324,340,356,372]
+srun: launching 8455356.1 on host s19r1b06, 24 tasks: [5,21,37,53,69,85,101,117,133,149,165,181,197,213,229,245,261,277,293,309,325,341,357,373]
+srun: launching 8455356.1 on host s19r1b07, 24 tasks: [6,22,38,54,70,86,102,118,134,150,166,182,198,214,230,246,262,278,294,310,326,342,358,374]
+srun: launching 8455356.1 on host s19r1b09, 24 tasks: [7,23,39,55,71,87,103,119,135,151,167,183,199,215,231,247,263,279,295,311,327,343,359,375]
+srun: launching 8455356.1 on host s19r1b10, 24 tasks: [8,24,40,56,72,88,104,120,136,152,168,184,200,216,232,248,264,280,296,312,328,344,360,376]
+srun: launching 8455356.1 on host s19r1b11, 24 tasks: [9,25,41,57,73,89,105,121,137,153,169,185,201,217,233,249,265,281,297,313,329,345,361,377]
+srun: launching 8455356.1 on host s19r1b12, 24 tasks: [10,26,42,58,74,90,106,122,138,154,170,186,202,218,234,250,266,282,298,314,330,346,362,378]
+srun: launching 8455356.1 on host s19r1b14, 24 tasks: [11,27,43,59,75,91,107,123,139,155,171,187,203,219,235,251,267,283,299,315,331,347,363,379]
+srun: launching 8455356.1 on host s19r1b15, 24 tasks: [12,28,44,60,76,92,108,124,140,156,172,188,204,220,236,252,268,284,300,316,332,348,364,380]
+srun: launching 8455356.1 on host s19r1b16, 24 tasks: [13,29,45,61,77,93,109,125,141,157,173,189,205,221,237,253,269,285,301,317,333,349,365,381]
+srun: launching 8455356.1 on host s19r1b17, 24 tasks: [14,30,46,62,78,94,110,126,142,158,174,190,206,222,238,254,270,286,302,318,334,350,366,382]
+srun: launching 8455356.1 on host s19r1b18, 24 tasks: [15,31,47,63,79,95,111,127,143,159,175,191,207,223,239,255,271,287,303,319,335,351,367,383]
+srun: route default plugin loaded
+srun: Node s19r1b17, 24 tasks started
+srun: Node s19r1b14, 24 tasks started
+srun: Node s19r1b07, 24 tasks started
+srun: Node s19r1b02, 24 tasks started
+srun: Node s19r1b10, 24 tasks started
+srun: Node s19r1b12, 24 tasks started
+srun: Node s19r1b16, 24 tasks started
+srun: Node s19r1b15, 24 tasks started
+srun: Node s19r1b04, 24 tasks started
+srun: Node s19r1b06, 24 tasks started
+srun: Node s19r1b01, 24 tasks started
+srun: Node s19r1b11, 24 tasks started
+srun: Node s19r1b09, 24 tasks started
+srun: Node s19r1b18, 24 tasks started
+srun: Node s19r1b05, 24 tasks started
+srun: Node s19r1b03, 24 tasks started
+17:59:10 INFO  /home/bsc03/bsc03353/forge-gpfs/src/main.c:107 140036860557376: I/O Forwarding Exploration [START]
+18:00:21 WARN  /home/bsc03/bsc03353/forge-gpfs/src/main.c:784 140036860557376: hit stone wall at 71.059616 seconds!
+18:00:21 INFO  /home/bsc03/bsc03353/forge-gpfs/src/main.c:901 140036860557376: I/O Forwarding Exploration [COMPLETE]
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b12: tasks 10,26,42,58,74,90,106,122,138,154,170,186,202,218,234,250,266,282,298,314,330,346,362,378: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b03: tasks 2,18,34,50,66,82,98,114,130,146,162,178,194,210,226,242,258,274,290,306,322,338,354,370: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b09: tasks 7,23,39,55,71,87,103,119,135,151,167,183,199,215,231,247,263,279,295,311,327,343,359,375: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b01: tasks 0,16,32,48,64,80,96,112,128,144,160,176,192,208,224,240,256,272,288,304,320,336,352,368: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b18: tasks 15,31,47,63,79,95,111,127,143,159,175,191,207,223,239,255,271,287,303,319,335,351,367,383: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b04: tasks 3,19,35,51,67,83,99,115,131,147,163,179,195,211,227,243,259,275,291,307,323,339,355,371: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b17: tasks 14,30,46,62,78,94,110,126,142,158,174,190,206,222,238,254,270,286,302,318,334,350,366,382: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b16: tasks 13,29,45,61,77,93,109,125,141,157,173,189,205,221,237,253,269,285,301,317,333,349,365,381: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b02: tasks 1,17,33,49,65,81,97,113,129,145,161,177,193,209,225,241,257,273,289,305,321,337,353,369: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b06: tasks 5,21,37,53,69,85,101,117,133,149,165,181,197,213,229,245,261,277,293,309,325,341,357,373: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b05: tasks 4,20,36,52,68,84,100,116,132,148,164,180,196,212,228,244,260,276,292,308,324,340,356,372: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b07: tasks 6,22,38,54,70,86,102,118,134,150,166,182,198,214,230,246,262,278,294,310,326,342,358,374: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b10: tasks 8,24,40,56,72,88,104,120,136,152,168,184,200,216,232,248,264,280,296,312,328,344,360,376: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b14: tasks 11,27,43,59,75,91,107,123,139,155,171,187,203,219,235,251,267,283,299,315,331,347,363,379: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b15: tasks 12,28,44,60,76,92,108,124,140,156,172,188,204,220,236,252,268,284,300,316,332,348,364,380: Completed
+srun: Received task exit notification for 24 tasks of step 8455356.1 (status=0x0000).
+srun: s19r1b11: tasks 9,25,41,57,73,89,105,121,137,153,169,185,201,217,233,249,265,281,297,313,329,345,361,377: Completed

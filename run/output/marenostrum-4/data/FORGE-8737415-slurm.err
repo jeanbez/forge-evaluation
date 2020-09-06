@@ -1,0 +1,57 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+15:21:01 INFO  /home/bsc03/bsc03353/forge/src/main.c:107 140447021914176: I/O Forwarding Exploration [START]
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+15:25:38 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140246012749568: r->filehandle = 39, r->size = 8388608, r->offset = 0
+15:25:38 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140246012749568: single write -1 of expected 8388608
+15:25:38 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140508513404672: r->filehandle = 38, r->size = 8388608, r->offset = 0
+15:25:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140508513404672: single write -1 of expected 8388608
+15:25:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139987561309952: r->filehandle = 80, r->size = 8388608, r->offset = 0
+15:25:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139987561309952: single write -1 of expected 8388608
+15:25:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140506365916928: r->filehandle = 44, r->size = 8388608, r->offset = 0
+15:25:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140506365916928: single write -1 of expected 8388608
+15:25:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140411979294464: r->filehandle = 43, r->size = 8388608, r->offset = 0
+15:25:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140411979294464: single write -1 of expected 8388608
+15:25:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140416274269952: r->filehandle = 82, r->size = 8388608, r->offset = 0
+15:25:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140416274269952: single write -1 of expected 8388608
+15:25:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140226685359872: r->filehandle = 57, r->size = 8388608, r->offset = 0
+15:25:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140226685359872: single write -1 of expected 8388608
+slurmstepd: error: *** JOB 8737415 ON s05r1b47 CANCELLED AT 2020-02-07T15:25:44 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[53871,0],0] on node s05r1b47
+  Remote daemon: [[53871,0],3] on node s08r1b27
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

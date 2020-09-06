@@ -1,0 +1,33 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+13:35:25 INFO  /home/bsc03/bsc03353/forge/src/main.c:107 139986695895104: I/O Forwarding Exploration [START]
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+13:40:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139979570620160: r->filehandle = 217, r->size = 6291456, r->offset = 0
+13:40:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139979570620160: single write -1 of expected 6291456
+13:40:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139968833181440: r->filehandle = 207, r->size = 6291456, r->offset = 0
+13:40:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139968833181440: single write -1 of expected 6291456
+13:40:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139975275644672: r->filehandle = 84, r->size = 6291456, r->offset = 0
+13:40:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139975275644672: single write -1 of expected 6291456
+13:40:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139964538205952: r->filehandle = 182, r->size = 6291456, r->offset = 0
+13:40:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139964538205952: single write -1 of expected 6291456
+slurmstepd: error: *** JOB 8730375 ON s07r1b53 CANCELLED AT 2020-02-07T13:40:15 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[39014,0],0] on node s07r1b53
+  Remote daemon: [[39014,0],6] on node s07r2b49
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

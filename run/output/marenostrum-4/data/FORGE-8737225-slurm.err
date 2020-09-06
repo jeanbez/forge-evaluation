@@ -1,0 +1,43 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+15:04:05 INFO  /home/bsc03/bsc03353/forge/src/main.c:107 140031638227008: I/O Forwarding Exploration [START]
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+15:09:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139992300734208: r->filehandle = 211, r->size = 32768, r->offset = 0
+15:09:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139992300734208: single write -1 of expected 32768
+15:09:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140015923099392: r->filehandle = 181, r->size = 32768, r->offset = 0
+15:09:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140015923099392: single write -1 of expected 32768
+15:09:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140011628123904: r->filehandle = 199, r->size = 32768, r->offset = 0
+15:09:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140011628123904: single write -1 of expected 32768
+15:09:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139996595709696: r->filehandle = 124, r->size = 32768, r->offset = 0
+15:09:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139996595709696: single write -1 of expected 32768
+15:09:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140000890685184: r->filehandle = 119, r->size = 32768, r->offset = 0
+15:09:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140000890685184: single write -1 of expected 32768
+15:09:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 139998743197440: r->filehandle = 93, r->size = 32768, r->offset = 0
+15:09:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 139998743197440: single write -1 of expected 32768
+15:09:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140005185660672: r->filehandle = 225, r->size = 32768, r->offset = 0
+15:09:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140005185660672: single write -1 of expected 32768
+15:09:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140003038172928: r->filehandle = 210, r->size = 32768, r->offset = 0
+15:09:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140003038172928: single write -1 of expected 32768
+15:09:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140020218074880: r->filehandle = 81, r->size = 32768, r->offset = 0
+15:09:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140020218074880: single write -1 of expected 32768
+slurmstepd: error: *** JOB 8737225 ON s01r1b23 CANCELLED AT 2020-02-07T15:09:18 DUE TO TIME LIMIT ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[30002,0],0] on node s01r1b23
+  Remote daemon: [[30002,0],6] on node s04r1b21
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

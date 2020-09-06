@@ -1,0 +1,631 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+14:06:45 INFO  /home/bsc03/bsc03353/forge/src/main.c:107 140131259623488: I/O Forwarding Exploration [START]
+Will AGIOS generate trace files? NO
+Default scheduling algorithm: TO
+TWINS window size: 1000000
+Will the Prediction Module read information from trace files? NO
+File with access time functions: /home/bsc03/bsc03353/forge/agios/access_times.func
+AGIOS thinks its user has stripe size of 32768
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 83886080
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 89653248
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 25690112
+14:06:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 72876032
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 92798976
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 67633152
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 19398656
+14:06:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 94896128
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 44564480
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 71303168
+14:06:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 0
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 33030144
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 8388608
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 5767168
+14:06:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 92274688
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 75497472
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 78118912
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 93847552
+14:06:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 84410368
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 76021760
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 68157440
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 96468992
+14:06:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 36175872
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 51380224
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 76546048
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 58195968
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 77070336
+14:06:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 88080384
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 16252928
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 17301504
+14:06:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 79691776
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 36700160
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 32505856
+14:06:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 11010048
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 99614720
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 1048576
+14:06:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 87031808
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 24117248
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 41418752
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 42467328
+14:06:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 8912896
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 12582912
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 70254592
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 23592960
+14:06:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 57147392
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 90701824
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 19922944
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 86507520
+14:06:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 11534336
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 7340032
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 58720256
+14:06:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 3145728
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 61865984
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 18350080
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 94371840
+14:07:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 93323264
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 28311552
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 10485760
+14:07:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 46137344
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 40370176
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 56098816
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 40894464
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 68681728
+14:07:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 66060288
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 1572864
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 45613056
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 6815744
+14:07:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 45088768
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 74973184
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 15728640
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 53477376
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 5242880
+14:07:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 26214400
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 44040192
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 77594624
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 78643200
+14:07:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 22020096
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 57671680
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 49283072
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 9437184
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 100139008
+14:07:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 34603008
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 60817408
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 29360128
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 91226112
+14:07:07 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 7864320
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 38797312
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 82837504
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 59768832
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 2097152
+14:07:08 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 73924608
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 46661632
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 52428800
+14:07:09 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 49807360
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 74448896
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 18874368
+14:07:10 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 4718592
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 4194304
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 83361792
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 51904512
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 88604672
+14:07:11 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 42991616
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 85983232
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 35651584
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 23068672
+14:07:12 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 27262976
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 55050240
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 71827456
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 39845888
+14:07:13 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 56623104
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 6291456
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 52953088
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 54525952
+14:07:14 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 62390272
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 66584576
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 63438848
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 37224448
+14:07:15 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 20447232
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 20971520
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 87556096
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 79167488
+14:07:16 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 38273024
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 26738688
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 21495808
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 70778880
+14:07:17 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 34078720
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 69206016
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 47185920
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 90177536
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 62914560
+14:07:18 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 80216064
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 30408704
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 81264640
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 73400320
+14:07:19 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 89128960
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 28835840
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 29884416
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 3670016
+14:07:20 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 80740352
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 63963136
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 64487424
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 98041856
+14:07:21 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 96993280
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 9961472
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 37748736
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 97517568
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 98566144
+14:07:22 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 13631488
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 14155776
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 99090432
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 30932992
+14:07:23 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 54001664
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 47710208
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 24641536
+14:07:24 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 14680064
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 85458944
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 81788928
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 59244544
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 190316544
+14:07:25 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 48234496
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 15204352
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 55574528
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 31457280
+14:07:26 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 126353408
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 13107200
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 17825792
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 65536000
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 120061952
+14:07:27 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 60293120
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 39321600
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 72351744
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 31981568
+14:07:28 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:29 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 168296448
+14:07:29 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:29 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 95420416
+14:07:29 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:30 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 193462272
+14:07:30 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:30 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 173539328
+14:07:30 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 2621440
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 43515904
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 16777216
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 82313216
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 133693440
+14:07:31 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 192937984
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 101187584
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 184549376
+14:07:32 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 168820736
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 171966464
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 178782208
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 185073664
+14:07:33 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 176685056
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 48758784
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 109051904
+14:07:34 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 177209344
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 137363456
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 180355072
+14:07:35 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 158859264
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 133169152
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 33554432
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 136839168
+14:07:36 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 50855936
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 143130624
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 188743680
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 65011712
+14:07:37 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:38 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 200278016
+14:07:38 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 50331648
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 106430464
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 12058624
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 157810688
+14:07:39 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 162529280
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 170917888
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 120586240
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 124780544
+14:07:40 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 195559424
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 112197632
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 191365120
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 119013376
+14:07:41 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 108003328
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 103809024
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 197132288
+14:07:42 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 145227776
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 193986560
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 124256256
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 111673344
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 141557760
+14:07:43 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 166723584
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 61341696
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 101711872
+14:07:44 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 102236160
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 109576192
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 107479040
+14:07:45 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 149946368
+14:07:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 195035136
+14:07:46 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 179306496
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 154140672
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 116391936
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 191889408
+14:07:47 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 69730304
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 145752064
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 158334976
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 144703488
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 111149056
+14:07:48 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 105381888
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 25165824
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 102760448
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 194510848
+14:07:49 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 153092096
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 178257920
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 187170816
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 187695104
+14:07:50 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 157286400
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 174587904
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 161480704
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 141033472
+14:07:51 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 119537664
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 123731968
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 137887744
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 172490752
+14:07:52 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 189267968
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 35127296
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 127926272
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 136314880
+14:07:53 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 146276352
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 140509184
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 121110528
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 122159104
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 183500800
+14:07:54 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 84934656
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 167247872
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 104333312
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 139460608
+14:07:55 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 22544384
+14:07:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 190840832
+14:07:56 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 138936320
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 179830784
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 155713536
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 131072000
+14:07:57 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 91750400
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 128974848
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 27787264
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 116916224
+14:07:58 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 188219392
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 184025088
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 169869312
+14:07:59 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 147849216
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 199229440
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 67108864
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 106954752
+14:08:00 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 171442176
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 198180864
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 114819072
+14:08:01 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140091921966848: r->filehandle = 35, r->size = 524288, r->offset = 148373504
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140091921966848: single write -1 of expected 524288
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140104806893312: r->filehandle = 35, r->size = 524288, r->offset = 181403648
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140104806893312: single write -1 of expected 524288
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140113396844288: r->filehandle = 35, r->size = 524288, r->offset = 186646528
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140113396844288: single write -1 of expected 524288
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140115544332032: r->filehandle = 35, r->size = 524288, r->offset = 164626432
+14:08:02 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140115544332032: single write -1 of expected 524288
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140121986795264: r->filehandle = 35, r->size = 524288, r->offset = 165150720
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140121986795264: single write -1 of expected 524288
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 95944704
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140098364430080: r->filehandle = 35, r->size = 524288, r->offset = 131596288
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140098364430080: single write -1 of expected 524288
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140094069454592: r->filehandle = 35, r->size = 524288, r->offset = 181927936
+14:08:03 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140094069454592: single write -1 of expected 524288
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140096216942336: r->filehandle = 35, r->size = 524288, r->offset = 115343360
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140096216942336: single write -1 of expected 524288
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140100511917824: r->filehandle = 35, r->size = 524288, r->offset = 182452224
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140100511917824: single write -1 of expected 524288
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140124134283008: r->filehandle = 35, r->size = 524288, r->offset = 175112192
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140124134283008: single write -1 of expected 524288
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140111249356544: r->filehandle = 35, r->size = 524288, r->offset = 174063616
+14:08:04 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140111249356544: single write -1 of expected 524288
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140119839307520: r->filehandle = 35, r->size = 524288, r->offset = 41943040
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140119839307520: single write -1 of expected 524288
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140109101868800: r->filehandle = 35, r->size = 524288, r->offset = 199753728
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140109101868800: single write -1 of expected 524288
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140102659405568: r->filehandle = 35, r->size = 524288, r->offset = 198705152
+14:08:05 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140102659405568: single write -1 of expected 524288
+14:08:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140117691819776: r->filehandle = 35, r->size = 524288, r->offset = 154664960
+14:08:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140117691819776: single write -1 of expected 524288
+14:08:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:61 140106954381056: r->filehandle = 35, r->size = 524288, r->offset = 114294784
+14:08:06 ERROR /home/bsc03/bsc03353/forge/src/dispatcher/posix.c:62 140106954381056: single write -1 of expected 524288
+14:08:06 WARN  /home/bsc03/bsc03353/forge/src/main.c:789 139982929934400: hit stone wall at 80.469829 seconds!
+AGIOS: stopped for this client. It can already be used by calling agios_init
+
+14:08:06 INFO  /home/bsc03/bsc03353/forge/src/main.c:1158 140131259623488: I/O Forwarding Exploration [COMPLETE]

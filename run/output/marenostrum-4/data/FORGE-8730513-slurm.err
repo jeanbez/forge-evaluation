@@ -1,0 +1,33 @@
+Set GCC compilers as MPI wrappers backend 
+remove impi/2017.4 (PATH, MANPATH, LD_LIBRARY_PATH) 
+load openmpi/4.0.2_UCX (PATH, MANPATH, LD_LIBRARY_PATH) 
+Set GCC compilers as MPI wrappers backend 
+load gsl/2.4 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH, MANPATH, INFOPATH,
+C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, GSL_DIR) 
+srun: error: Task launch for 8730513.0 failed on node s23r1b68: Communication connection failure
+srun: error: Application launch failed: Communication connection failure
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: error: Timed out waiting for job step to complete
+--------------------------------------------------------------------------
+A hostfile was provided that contains multiple definitions
+of the slot count for at least one node:
+
+  hostfile:  /home/bsc03/bsc03353/FORGE-experiments-read/FORGE-587-8730513/nodes
+  node:      s02r1b29
+
+You can either list a node multiple times, once for each slot,
+or you can provide a single line that contains "slot=N". Mixing
+the two methods is not supported.
+
+Please correct the hostfile and try again.
+--------------------------------------------------------------------------
+[s02r1b25:313253] [[2519,0],0] ORTE_ERROR_LOG: Error in file base/rmaps_base_support_fns.c at line 66
+[s02r1b25:313253] [[2519,0],0] ORTE_ERROR_LOG: Error in file base/plm_base_launch_support.c at line 2117
+[s02r1b25:313253] [[2519,0],0] ORTE_ERROR_LOG: Error in file plm_slurm_module.c at line 211
+--------------------------------------------------------------------------
+An internal error has occurred in ORTE:
+
+[[2519,0],0] FORCE-TERMINATE AT (null):1 - error plm_slurm_module.c(471)
+
+This is something that should be reported to the developers.
+--------------------------------------------------------------------------
